@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cattle Health Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+        .container {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            width: 400px;
+            margin: 50px auto;
+        }
+        h1 {
+            color: #ff69b4;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #ff69b4;
+        }
+        input[type="text"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ff69b4;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #444;
+        }
+        input[type="submit"] {
+            padding: 10px;
+            background-color: #ff69b4;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #ff1493;
+        }
+        .status {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .status p {
+            font-size: 18px;
+        }
+        .notification-status {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .notification-status p {
+            font-size: 18px;
+            color: #ff69b4;
+        }
+        .healthy {
+            color: #00ff00;
+        }
+        .not-healthy {
+            color: #ff0000;
+        }
+        .unhealthy-ill {
+            color: #ffa500;
+        }
+        .slogan {
+            text-align: center;
+            margin-top: 20px;
+            font-style: italic;
+        }
+        .project-statement {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 14px;
+            font-style: italic;
+        }
+        .logo {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .left-logo {
+            width: 50%;
+            display: block;
+            margin-right: 10px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="project-statement">A Project by AI&amp;DS Final Year Students</div>
+    <div class="container">
+        <img class="logo" src="pic.jpeg" alt="Logo">
+        <h1>Cattle Health Prediction</h1>
+        <form action="/predict" method="POST">
+            <!-- Input fields for sensor data -->
+            <label for="temperature">Temperature:</label>
+            <input type="text" id="temperature" name="temperature" required>
+            
+            <label for="pulse">Pulse:</label>
+            <input type="text" id="pulse" name="pulse" required>
+            
+            <label for="accelerometer">Accelerometer:</label>
+            <input type="text" id="accelerometer" name="accelerometer" required>
+            
+            <label for="latitude">Latitude:</label>
+            <input type="text" id="latitude" name="latitude" required>
+            
+            <label for="longitude">Longitude:</label>
+            <input type="text" id="longitude" name="longitude" required>
+            
+            <input type="submit" value="Predict">
+        </form>
+
+        <!-- Display status here -->
+        <div class="status">
+            <p>Status: <span class="{{ status_class }}">{{ status }}</span></p>
+        </div>
+
+        <!-- Display notification status -->
+        <div class="notification-status">
+            <p>Notification sent: {% if notification_sent %}Yes{% else %}No{% endif %}</p>
+        </div>
+    </div>
+    <div class="slogan">
+        <p>"Oru Cow adavadhu oru maadu 🐮🐮"</p>
+        <p>"Happy Cattle, Healthy Life"</p>
+        <p>"Your Cattle's Health is Our Priority"</p>
+    </div>
+</body>
+</html>
