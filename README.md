@@ -1,7 +1,7 @@
 
 # BarnSense: AI & IoT Livestock Health Monitoring
 
-BarnSense is an innovative project that harnesses the power of AI and IoT to monitor the health of livestock, with potential applications in wildlife monitoring. This repository contains the complete working code behind the device.
+BarnSense is an innovative project that harnesses the power of AI and IoT to monitor the health of livestock, with potential applications in wildlife monitoring. This repository contains the complete working code behind the device.In this Project i have trained a model which takes live data from the sensors attached on cattles and use the data to predict wheather the cattle is healthy or not. The model i have used is gaussian naive bayes which is trained using 1000 previous data of cattles and made for classification. I have deployed the model using flask framework by creating a webapp which tracs live data and also predicts the health of the cattle using the data. When the model predicts that the cattle is unhealthy then it will alert the farmer about the need for imediate action by sending a alert notification.
 
 ## Overview
 
