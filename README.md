@@ -34,10 +34,6 @@ Before running the code, ensure you have set up the Twilio credentials as mentio
 
 Contributions to BarnSense are welcome! If you have ideas for improvements, new features, or bug fixes, please submit a pull request. Be sure to follow our contribution guidelines.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Contact
 
 For any questions or support, feel free to contact us at [haribalan9697@gmail.com](mailto:haribalan9697@gmail.com).
