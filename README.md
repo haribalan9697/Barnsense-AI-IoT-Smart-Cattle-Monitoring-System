@@ -36,7 +36,7 @@ Contributions to BarnSense are welcome! If you have ideas for improvements, new 
 
 ## Contact
 
-For any questions or support, feel free to contact us at [haribalan9697@gmail.com](mailto:harihb9697@gmail.com).
+For any questions or support, feel free to contact us at [harihb9697@gmail.com](mailto:harihb9697@gmail.com).
 
 ---
 
